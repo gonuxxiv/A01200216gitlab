@@ -28,13 +28,12 @@ function addMovie() {
       var li = document.createElement("li");
       // li.setAttribute('style',"font-weight: bold; text-align: center;");
       li.setAttribute('class',"list");
-      li.setAttribute('onclick',"removeList()");
+      // li.setAttribute('onclick',"removeList()");
       li.setAttribute('id', "list" + i);
       li.appendChild(document.createTextNode(userTypedText));
       myMovieList.appendChild(li);
       i += 1;
-    }  
-
+    } 
     history();
     clearInput();
 }
@@ -78,12 +77,13 @@ function history() {
     }
   }
 
-var listMovie = document.getElementsByClassName("list");
+// Below targets the element from the list and remove it
+var listMovie = document.getElementsByClassName("list").value;
 var x = 0;
-var lis = document.querySelectorAll('li');
-function removeList () {
-  var list = document.getElementById("list" + x);
-  for (i=0; i < document.getElementsByClassName("list").length; i++) {
-  document.getElementById("list" + i).innerHTML = "";
+var lis = document.querySelectorAll('li');  
+var ul = document.querySelector('ul');
+ul.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    this.removeChild(ev.target);
   }
-}
+});

@@ -11,4 +11,30 @@
   li:hover {
     cursor: pointer;
   }
-  
+
+#ul {
+  list-style-type: none;
+}
+li {
+  border-style: double;
+  border-radius: 7px;
+  border-bottom: dotted;
+  height: 40px;
+  width: 400px;
+  background-color: whitesmoke;
+  text-align: center;
+  font-weight: bolder;
+  font-family: fantasy;
+  font-size: 200%;
+}
+li:hover {
+  background-color: coral;
+  color: black;
+}
+#history {
+  border-style:groove;
+  border-bottom: 5px dotted navy;
+}
+td {
+  width: 500px;
+}

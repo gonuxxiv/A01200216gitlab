@@ -4,13 +4,17 @@
     align-items: center;
   }
   
-  .container {
+.container {
     height: 90vh;
   }
 
-  li:hover {
+li:hover {
     cursor: pointer;
   }
+
+.card-body {
+  background-color: ivory;
+}
 
 #ul {
   list-style-type: none;

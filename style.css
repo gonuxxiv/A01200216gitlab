@@ -12,10 +12,6 @@ li:hover {
     cursor: pointer;
   }
 
-.card-body {
-  background-color: ivory;
-}
-
 #ul {
   list-style-type: none;
 }

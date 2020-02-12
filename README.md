@@ -1,4 +1,4 @@
-<h1>.MD</h1>
+<h1>WHAT IS .MD EXTENTION?</h1>
 
 .md is also referred as MARKDOWN file and it is created using one of the dialects of the Markdown language.
 
